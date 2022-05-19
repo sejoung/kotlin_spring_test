@@ -10,6 +10,8 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder
 object ObjectMapperFactory {
     val objectMapper: ObjectMapper = Jackson2ObjectMapperBuilder().apply {
         createXmlMapper(false)
+        serializerByType(User::class.java, UserSerializer())
+        deserializerByType(User::class.java, UserDeserializer())
     }
         .build<ObjectMapper>()
         .apply {
