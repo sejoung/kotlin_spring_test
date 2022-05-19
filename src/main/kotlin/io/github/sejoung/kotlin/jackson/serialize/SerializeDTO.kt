@@ -5,7 +5,7 @@ data class User(val source: String, val path: String)
 
 data class OldOrder(
     val orderName: String,
-    @UserAnnotation
+    @get:UserAnnotation
     val user: User
 )
 
