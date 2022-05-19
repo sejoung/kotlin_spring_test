@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.module.kotlin.registerKotlinModule
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder
 
-object ObjectMapperFoctory {
+object ObjectMapperFactory {
     val objectMapper: ObjectMapper = Jackson2ObjectMapperBuilder().apply {
         createXmlMapper(false)
     }

@@ -3,7 +3,7 @@ package io.github.sejoung.kotlin.jackson.serialize
 import com.fasterxml.jackson.module.kotlin.readValue
 import org.junit.jupiter.api.Test
 
-internal class ObjectMapperFoctoryTest {
+internal class ObjectMapperFactoryTest {
 
     @Test
     internal fun name() {
@@ -16,7 +16,7 @@ internal class ObjectMapperFoctoryTest {
                           "orderName":"old"
                         }
         """.trimIndent()
-        val actual = ObjectMapperFoctory.objectMapper.readValue<OldOrder>(json)
+        val actual = ObjectMapperFactory.objectMapper.readValue<OldOrder>(json)
         println(actual)
     }
 }
