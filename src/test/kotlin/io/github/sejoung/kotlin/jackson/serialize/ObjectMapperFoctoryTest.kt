@@ -2,9 +2,11 @@ package io.github.sejoung.kotlin.jackson.serialize
 
 import com.fasterxml.jackson.module.kotlin.readValue
 import org.assertj.core.api.Assertions.assertThat
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 
+@Disabled
 @DisplayName("ObjectMapper 커스텀 어너테이션 테스트")
 internal class ObjectMapperFactoryTest {
 

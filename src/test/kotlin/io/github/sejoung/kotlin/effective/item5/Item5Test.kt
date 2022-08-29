@@ -29,9 +29,7 @@ internal class Item5Test {
     @Test
     internal fun requireSmartCasting() {
         val given: String? = null
-
-        val actual = requireNotNull(given)
-        println(actual)
+        assertThrows<IllegalArgumentException> { requireNotNull(given) }
     }
 
     @DisplayName("check 스마트 캐스팅 테스트")
@@ -39,7 +37,6 @@ internal class Item5Test {
     internal fun checkSmartCasting() {
         val given: String? = null
 
-        val actual = checkNotNull(given)
-        println(actual)
+        assertThrows<IllegalStateException> { checkNotNull(given) }
     }
 }
