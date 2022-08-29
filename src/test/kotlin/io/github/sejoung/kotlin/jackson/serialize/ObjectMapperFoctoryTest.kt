@@ -22,7 +22,6 @@ internal class ObjectMapperFactoryTest {
         """.trimIndent()
         val actual = ObjectMapperFactory.objectMapper.readValue<OldOrder>(json)
         assertThat(actual.user.source).isEqualTo("old source")
-
     }
 
     @DisplayName("data class @get 변환테스트")

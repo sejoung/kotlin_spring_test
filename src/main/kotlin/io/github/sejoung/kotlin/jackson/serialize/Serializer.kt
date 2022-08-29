@@ -33,7 +33,6 @@ class UserRawDeserializer : StdDeserializer<User>(User::class.java) {
         }
 }
 
-
 class UserSerializer : StdSerializer<User>(User::class.java) {
     override fun serialize(value: User, gen: JsonGenerator, provider: SerializerProvider) =
         gen.writeString(value.path + value.source)
@@ -44,5 +43,4 @@ class UserDeserializer : StdDeserializer<User>(User::class.java) {
         println(p0.text)
         return User(source = "test", path = "p0.text")
     }
-
 }

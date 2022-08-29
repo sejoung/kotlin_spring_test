@@ -11,6 +11,7 @@ indent_size = 4
 indent_style = space
 tab_width = 4
 
+disabled_rules = filename
 # Trailing comma 설정
 ij_kotlin_allow_trailing_comma = true
 ij_kotlin_allow_trailing_comma_on_call_site = true
